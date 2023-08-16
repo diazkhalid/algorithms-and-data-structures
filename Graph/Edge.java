@@ -1,0 +1,33 @@
+package com.Modul_4;
+
+/**
+ * public class Edge merupakan class yang 
+ * digunakan sebagai blueprint untuk membuat edge baru 
+ * yang di dalamnya terdapat constructor, variabel 
+ * pointer, dan variabel objek class vertex
+ */
+public class Edge {
+    /**
+     * Vertex dest merupakan sebuah variabel 
+     * yang berfungsi untuk menyimpan nilai dari vertex lain
+     * yang terhubung dengan edge
+     */
+    Vertex dest;
+    /**
+     * next merupakan variabel objek dari class edge yang berfungsi
+     * menunjuk ke edge selajutnya
+     */
+    Edge next;
+    /**
+     * Edge() merupakan sebuah kontruktor dari class Edge
+     * melalui konstruktor ini elemen-elemen yang berada pada class Edge
+     * akan memperoleh nilai yang akan di tampung.
+     */
+    public Edge(Vertex dest){
+        /*this.nama = nama merupakan variabel this.nama yang merupakan
+        variabel global di class Vertex menampung nilai dari variabel nama yang dimasukkan
+        melalui constructor.
+        */
+        this.dest = dest;
+    }
+}
